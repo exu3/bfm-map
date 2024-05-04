@@ -5,7 +5,7 @@ main.py
 import folium
 
 
-m = folium.Map(location=(44.469288, -73.215117),
+m = folium.Map(location=(44.467190, -73.214986),
                tiles="OpenStreetMap", zoom_start=16)
 
 
@@ -18,7 +18,8 @@ parking_markers = {
                     "desc": "Kilburn Lot on the corner of Kilburn St. and Pine St. Do not park in 'tenant parking.'"},
     "maltex": {"location": [44.467378, -73.215969],
                "tooltip": "Parking",
-               "desc": "Paid parking at the Maltex Building."},
+               "desc": "Paid parking at the Maltex Building.",
+               "icon": "usd"},
     "howard_st": {"location": [44.467128, -73.214309],
                   "tooltip": "Parking",
                   "desc": "Street parking on Howard St."},
@@ -28,19 +29,21 @@ parking_markers = {
     "btv_electric": {"location": [44.46373665090995, -73.21546543771963],
                      "tooltip": "Parking",
                      "desc": "Burlington Electric parking lot."},
-
     "btv_dpw": {"location": [44.46159968224294, -73.21482328691013],
                 "tooltip": "Parking",
                 "desc": "Burlington DPW parking lot."}
 }
 
+
 # find icons on https://getbootstrap.com/docs/3.3/components/
 for k in parking_markers:
+    icon_name = parking_markers[k].get("icon", "th")
     folium.Marker(
         location=parking_markers[k]["location"],
         tooltip=parking_markers[k]["tooltip"],
         popup=parking_markers[k]["desc"],
-        icon=folium.Icon(icon="map-marker", color="blue"),
+        icon=folium.Icon(
+            icon=icon_name, color="blue"),
     ).add_to(m)
 
 
@@ -48,7 +51,7 @@ folium.Marker(
     location=[44.469524480854666, -73.21545503014707],
     tooltip="Burlington Farmers Market",
     popup="Market entrance.",
-    icon=folium.Icon(icon="apple", color="orange")
+    icon=folium.Icon(icon="star", color="orange")
 ).add_to(m)
 
 
