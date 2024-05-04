@@ -52,4 +52,5 @@ folium.Marker(
 ).add_to(m)
 
 
-m.save("./static/index.html")
+# docs directory for gh pages
+m.save("./docs/index.html")
