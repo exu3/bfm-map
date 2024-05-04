@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_45c07c9b47fca2cecc9f96c3af84f967 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_45c07c9b47fca2cecc9f96c3af84f967" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_45c07c9b47fca2cecc9f96c3af84f967 = L.map(
+                "map_45c07c9b47fca2cecc9f96c3af84f967",
+                {
+                    center: [44.469288, -73.215117],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_58421d654b64c5f8fff5ae327204e153 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_58421d654b64c5f8fff5ae327204e153.addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var marker_258a995dd559766cbe58584dc673be6f = L.marker(
+                [44.471932, -73.21682],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_f294e48e7d8fda7fd259e0c0ba6bac6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_258a995dd559766cbe58584dc673be6f.setIcon(icon_f294e48e7d8fda7fd259e0c0ba6bac6a);
+        
+    
+        var popup_610efcda661d5a3a1b766f204d4ea3e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3849d77ecfc6d48e09565a29fac9a864 = $(`<div id="html_3849d77ecfc6d48e09565a29fac9a864" style="width: 100.0%; height: 100.0%;">Street parking on South Champlain St.</div>`)[0];
+                popup_610efcda661d5a3a1b766f204d4ea3e2.setContent(html_3849d77ecfc6d48e09565a29fac9a864);
+            
+        
+
+        marker_258a995dd559766cbe58584dc673be6f.bindPopup(popup_610efcda661d5a3a1b766f204d4ea3e2)
+        ;
+
+        
+    
+    
+            marker_258a995dd559766cbe58584dc673be6f.bindTooltip(
+                `<div>
+                     Parking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bee5247719be0b1586696cb6053f6207 = L.marker(
+                [44.471177, -73.215073],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_01535191d2c79bacd2e8d6f60352596b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bee5247719be0b1586696cb6053f6207.setIcon(icon_01535191d2c79bacd2e8d6f60352596b);
+        
+    
+        var popup_0e6b9478afa35766d537804d3036521c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12e856608d76b2baa883dccc7ede8361 = $(`<div id="html_12e856608d76b2baa883dccc7ede8361" style="width: 100.0%; height: 100.0%;">Kilburn Lot on the corner of Kilburn St. and Pine St. Do not park in 'tenant parking.'</div>`)[0];
+                popup_0e6b9478afa35766d537804d3036521c.setContent(html_12e856608d76b2baa883dccc7ede8361);
+            
+        
+
+        marker_bee5247719be0b1586696cb6053f6207.bindPopup(popup_0e6b9478afa35766d537804d3036521c)
+        ;
+
+        
+    
+    
+            marker_bee5247719be0b1586696cb6053f6207.bindTooltip(
+                `<div>
+                     Parking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42cc4dd29b6f86a921a94fcb1c65077c = L.marker(
+                [44.467378, -73.215969],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_3bf6c201447ca0f8f445e58679a1233f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42cc4dd29b6f86a921a94fcb1c65077c.setIcon(icon_3bf6c201447ca0f8f445e58679a1233f);
+        
+    
+        var popup_12e08a2cdda2902c12edc359de434aa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_393470130e5ec79278b96a747a8d8e2f = $(`<div id="html_393470130e5ec79278b96a747a8d8e2f" style="width: 100.0%; height: 100.0%;">Paid parking at the Maltex Building.</div>`)[0];
+                popup_12e08a2cdda2902c12edc359de434aa9.setContent(html_393470130e5ec79278b96a747a8d8e2f);
+            
+        
+
+        marker_42cc4dd29b6f86a921a94fcb1c65077c.bindPopup(popup_12e08a2cdda2902c12edc359de434aa9)
+        ;
+
+        
+    
+    
+            marker_42cc4dd29b6f86a921a94fcb1c65077c.bindTooltip(
+                `<div>
+                     Parking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a96845545856dec7b2accf1de608a0bd = L.marker(
+                [44.467128, -73.214309],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_338ef82054e0480862c1e7c5315469de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a96845545856dec7b2accf1de608a0bd.setIcon(icon_338ef82054e0480862c1e7c5315469de);
+        
+    
+        var popup_cee2b68a3e35bd5ea7b275c0a5f445d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d18df93686153d0a6b2c84f8f1eb19d = $(`<div id="html_6d18df93686153d0a6b2c84f8f1eb19d" style="width: 100.0%; height: 100.0%;">Street parking on Howard St.</div>`)[0];
+                popup_cee2b68a3e35bd5ea7b275c0a5f445d9.setContent(html_6d18df93686153d0a6b2c84f8f1eb19d);
+            
+        
+
+        marker_a96845545856dec7b2accf1de608a0bd.bindPopup(popup_cee2b68a3e35bd5ea7b275c0a5f445d9)
+        ;
+
+        
+    
+    
+            marker_a96845545856dec7b2accf1de608a0bd.bindTooltip(
+                `<div>
+                     Parking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b81ebdb714fefc163722a06827b54122 = L.marker(
+                [44.46687407290227, -73.21448874842086],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_ecdbfc6d4da279fcd955f0ba5d83ccde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b81ebdb714fefc163722a06827b54122.setIcon(icon_ecdbfc6d4da279fcd955f0ba5d83ccde);
+        
+    
+        var popup_24810e48482e62e55cb3139bdb4fda52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f821a4b4cb610d609faeb624854003 = $(`<div id="html_30f821a4b4cb610d609faeb624854003" style="width: 100.0%; height: 100.0%;">Parking in the Dealer.com north lot.</div>`)[0];
+                popup_24810e48482e62e55cb3139bdb4fda52.setContent(html_30f821a4b4cb610d609faeb624854003);
+            
+        
+
+        marker_b81ebdb714fefc163722a06827b54122.bindPopup(popup_24810e48482e62e55cb3139bdb4fda52)
+        ;
+
+        
+    
+    
+            marker_b81ebdb714fefc163722a06827b54122.bindTooltip(
+                `<div>
+                     Parking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a6a02533b6ec39653f7b086d053092e = L.marker(
+                [44.46373665090995, -73.21546543771963],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_1b8feb6b8559dfbdc3298ca252e902f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a6a02533b6ec39653f7b086d053092e.setIcon(icon_1b8feb6b8559dfbdc3298ca252e902f1);
+        
+    
+        var popup_f0ec67ea2edad4b6e90e6af473c9252c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1990260e8e810a66af7b50ea31cdfeaf = $(`<div id="html_1990260e8e810a66af7b50ea31cdfeaf" style="width: 100.0%; height: 100.0%;">Burlington Electric parking lot.</div>`)[0];
+                popup_f0ec67ea2edad4b6e90e6af473c9252c.setContent(html_1990260e8e810a66af7b50ea31cdfeaf);
+            
+        
+
+        marker_7a6a02533b6ec39653f7b086d053092e.bindPopup(popup_f0ec67ea2edad4b6e90e6af473c9252c)
+        ;
+
+        
+    
+    
+            marker_7a6a02533b6ec39653f7b086d053092e.bindTooltip(
+                `<div>
+                     Parking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6e076d16ed978d24775418161fd81f1 = L.marker(
+                [44.46159968224294, -73.21482328691013],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_38bbe672416b309c03571ed1be26b125 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6e076d16ed978d24775418161fd81f1.setIcon(icon_38bbe672416b309c03571ed1be26b125);
+        
+    
+        var popup_b8f9f0dbdb4559efc67954bfbb2097cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20fd5afa1f1d372f805930084ed96292 = $(`<div id="html_20fd5afa1f1d372f805930084ed96292" style="width: 100.0%; height: 100.0%;">Burlington DPW parking lot.</div>`)[0];
+                popup_b8f9f0dbdb4559efc67954bfbb2097cd.setContent(html_20fd5afa1f1d372f805930084ed96292);
+            
+        
+
+        marker_a6e076d16ed978d24775418161fd81f1.bindPopup(popup_b8f9f0dbdb4559efc67954bfbb2097cd)
+        ;
+
+        
+    
+    
+            marker_a6e076d16ed978d24775418161fd81f1.bindTooltip(
+                `<div>
+                     Parking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f17a2a7018109cbd4e2f9433984aef7 = L.marker(
+                [44.469524480854666, -73.21545503014707],
+                {}
+            ).addTo(map_45c07c9b47fca2cecc9f96c3af84f967);
+        
+    
+            var icon_48bfc7b1628f2dd3bd70de177bc45333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "apple", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6f17a2a7018109cbd4e2f9433984aef7.setIcon(icon_48bfc7b1628f2dd3bd70de177bc45333);
+        
+    
+        var popup_5d39dc4b0796d5635d470cd18ebe739f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8f00c2ebd0aa6c46ca4fb4ec1af6338 = $(`<div id="html_d8f00c2ebd0aa6c46ca4fb4ec1af6338" style="width: 100.0%; height: 100.0%;">Market entrance.</div>`)[0];
+                popup_5d39dc4b0796d5635d470cd18ebe739f.setContent(html_d8f00c2ebd0aa6c46ca4fb4ec1af6338);
+            
+        
+
+        marker_6f17a2a7018109cbd4e2f9433984aef7.bindPopup(popup_5d39dc4b0796d5635d470cd18ebe739f)
+        ;
+
+        
+    
+    
+            marker_6f17a2a7018109cbd4e2f9433984aef7.bindTooltip(
+                `<div>
+                     Burlington Farmers Market
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
